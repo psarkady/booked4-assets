@@ -275,8 +275,8 @@ body {
 .react-datepicker {
   border: 1px solid var(--border-soft) !important;
   border-radius: 14px !important;
-  overflow: hidden !important;
   background: #ffffff !important;
+  overflow: visible !important;
 }
 
 .react-datepicker__header {
