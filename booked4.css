@@ -1,58 +1,216 @@
-/* --- brand színek --- */
+/* =================================================
+   BOOKED4 CUSTOM THEME
+   Dr. Nochta Lilian – booking UI styling
+   ================================================= */
 
-:root{
-  --accent: #c58ca0;        /* muted pink */
-  --accent-hover: #b97a90;
-  --bg-soft: #fbf7f2;       /* bézs háttér */
+
+/* =========================
+   THEME VARIABLES
+   ========================= */
+
+:root {
+
+  /* brand színek */
+  --brand-primary: #c58ca0;
+  --brand-primary-hover: #b97a90;
+
+  --brand-secondary: #e8d9df;
+  --brand-secondary-hover: #dcc9d1;
+
+  /* háttér */
+  --bg-main: #fbf7f2;
   --card-bg: #ffffff;
+
+  /* border */
   --border-soft: rgba(0,0,0,0.06);
+
+  /* text */
+  --text-main: #2b2b2b;
+  --text-muted: #777;
+
+  /* stepper */
+  --step-active: var(--brand-primary);
+  --step-inactive: #e6e6e6;
+
 }
 
 
-/* --- alap háttér --- */
+/* =========================
+   GLOBAL TYPOGRAPHY
+   ========================= */
 
-.App {
-  background: var(--bg-soft) !important;
+body {
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif !important;
+
+  color: var(--text-main) !important;
+
+  background: var(--bg-main) !important;
+
 }
 
 
-/* --- branding footer eltüntetése --- */
+/* =========================
+   HEADER ELTÜNTETÉSE
+   ========================= */
 
-footer.footer {
+.header {
   display: none !important;
 }
 
 
-/* --- card kinézet a naptár választónál --- */
+/* =========================
+   STEPPER
+   ========================= */
+
+.step-number__circle {
+
+  background: var(--step-inactive) !important;
+  border: none !important;
+
+}
+
+.step-number--touched .step-number__circle {
+
+  background: var(--step-active) !important;
+  color: white !important;
+
+}
+
+.step-number__title {
+
+  color: var(--text-muted) !important;
+  font-weight: 500 !important;
+
+}
+
+.step-number--touched .step-number__title {
+
+  color: var(--text-main) !important;
+
+}
+
+
+/* =========================
+   BOOKING CARD DESIGN
+   ========================= */
 
 .calendar-item {
+
   background: var(--card-bg) !important;
+
   border-radius: 14px !important;
   border: 1px solid var(--border-soft) !important;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.05) !important;
-  padding: 18px !important;
-  margin-bottom: 16px !important;
+
+  padding: 20px !important;
+  margin-bottom: 18px !important;
+
+  box-shadow: 0 10px 24px rgba(0,0,0,0.05) !important;
+
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease;
+
+}
+
+.calendar-item:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 16px 30px rgba(0,0,0,0.08) !important;
+
 }
 
 
-/* --- gombok --- */
+/* =========================
+   LOCATION TITLE
+   ========================= */
 
-.button.button--primary {
-  background: var(--accent) !important;
-  border-color: var(--accent) !important;
+.calendar-item__name {
+
+  font-size: 18px !important;
+  font-weight: 600 !important;
+
+}
+
+
+/* =========================
+   PRIMARY BUTTON
+   ========================= */
+
+.button--primary {
+
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+
   color: white !important;
+
   border-radius: 10px !important;
   font-weight: 600 !important;
+
 }
 
-.button.button--primary:hover {
-  background: var(--accent-hover) !important;
-  border-color: var(--accent-hover) !important;
+.button--primary:hover {
+
+  background: var(--brand-primary-hover) !important;
+  border-color: var(--brand-primary-hover) !important;
+
 }
 
 
-/* --- linkek --- */
+/* =========================
+   SECONDARY BUTTON
+   ========================= */
+
+.button--secondary {
+
+  background: var(--brand-secondary) !important;
+  border-color: var(--brand-secondary) !important;
+
+  color: var(--text-main) !important;
+
+  border-radius: 10px !important;
+
+}
+
+.button--secondary:hover {
+
+  background: var(--brand-secondary-hover) !important;
+
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
 
 .link {
-  color: var(--accent) !important;
+  color: var(--brand-primary) !important;
+}
+
+
+/* =========================
+   COOKIE BANNER
+   ========================= */
+
+.cookie-consent {
+
+  background: var(--card-bg) !important;
+  border-top: 1px solid var(--border-soft) !important;
+
+}
+
+
+/* =========================
+   BOOKED4 BRANDING ELREJTÉSE
+   ========================= */
+
+.footer {
+  display: none !important;
 }
