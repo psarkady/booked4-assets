@@ -198,3 +198,14 @@ select:focus {
   background: var(--brand-primary) !important;
   border-color: var(--brand-primary) !important;
 }
+
+
+/* scroll bar */
+.fc-scroller {
+  scrollbar-color: var(--brand-primary) transparent !important;
+}
+
+.fc-scroller,
+.rcs-custom-scroll {
+  scrollbar-color: var(--brand-primary) transparent !important;
+}
