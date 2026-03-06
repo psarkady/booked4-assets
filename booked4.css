@@ -1,6 +1,5 @@
 /* =================================================
    BOOKED4 CUSTOM THEME
-   Dr. Nochta Lilian – booking UI styling
    ================================================= */
 
 
@@ -370,4 +369,45 @@ body {
 .header__title,
 .header__navbar-toggle {
   display: none !important;
+}
+
+/* navigation arrow */
+
+.react-datepicker__navigation-icon::before {
+  border-color: var(--brand-primary) !important;
+}
+
+
+/* layout fix */
+
+.react-datepicker {
+  padding: 10px !important;
+  overflow: visible !important;
+}
+
+.react-datepicker__month-container {
+  width: auto !important;
+}
+
+.react-datepicker__month {
+  margin: 0.6rem !important;
+}
+
+.react-datepicker__week {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  width: 2.4rem !important;
+  line-height: 2.4rem !important;
+}
+
+
+/* rounded corners fix */
+
+.react-datepicker__header {
+  border-top-left-radius: 14px !important;
+  border-top-right-radius: 14px !important;
 }
