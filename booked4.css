@@ -1,0 +1,58 @@
+/* --- brand színek --- */
+
+:root{
+  --accent: #c58ca0;        /* muted pink */
+  --accent-hover: #b97a90;
+  --bg-soft: #fbf7f2;       /* bézs háttér */
+  --card-bg: #ffffff;
+  --border-soft: rgba(0,0,0,0.06);
+}
+
+
+/* --- alap háttér --- */
+
+.App {
+  background: var(--bg-soft) !important;
+}
+
+
+/* --- branding footer eltüntetése --- */
+
+footer.footer {
+  display: none !important;
+}
+
+
+/* --- card kinézet a naptár választónál --- */
+
+.calendar-item {
+  background: var(--card-bg) !important;
+  border-radius: 14px !important;
+  border: 1px solid var(--border-soft) !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.05) !important;
+  padding: 18px !important;
+  margin-bottom: 16px !important;
+}
+
+
+/* --- gombok --- */
+
+.button.button--primary {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: white !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+}
+
+.button.button--primary:hover {
+  background: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+}
+
+
+/* --- linkek --- */
+
+.link {
+  color: var(--accent) !important;
+}
