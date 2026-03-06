@@ -199,13 +199,16 @@ select:focus {
   border-color: var(--brand-primary) !important;
 }
 
+:root {
+  --primary-button-bg-color: var(--brand-primary);
+  --primary-button-bg-hover-color: var(--brand-primary-hover);
+  --primary-select-color: var(--brand-primary);
+  --secondary-select-color: var(--brand-secondary);
 
-/* scroll bar */
-.fc-scroller {
-  scrollbar-color: var(--brand-primary) transparent !important;
-}
+  --active-green-color: var(--brand-primary);
+  --spacer-grey-color: var(--brand-primary);
 
-.fc-scroller,
-.rcs-custom-scroll {
-  scrollbar-color: var(--brand-primary) transparent !important;
+  --form-widget-border-hover-color: var(--brand-primary);
+
+  --focus-border: 0 0 0 1px var(--brand-primary);
 }
