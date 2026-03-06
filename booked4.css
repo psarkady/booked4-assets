@@ -132,6 +132,23 @@ body {
   border-color: var(--brand-primary) !important;
 }
 
+/* Datepicker arrows */
+/* hide original icon */
+.react-datepicker__navigation-icon {
+  display: none !important;
+}
+
+/* next arrow */
+.react-datepicker__navigation--next {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23c58ca0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 6 15 12 9 18'/%3E%3C/svg%3E") no-repeat center !important;
+}
+
+/* previous arrow */
+.react-datepicker__navigation--previous {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23c58ca0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='15 6 9 12 15 18'/%3E%3C/svg%3E") no-repeat center !important;
+}
+
+
 
 /* time chips colors only */
 .chip__label {
@@ -154,4 +171,30 @@ body {
 /* footer hide */
 .footer {
   display: none !important;
+}
+
+/* INPUT focus */
+
+.text-input__input:focus,
+.phone-input__number .text-input__input:focus,
+select:focus {
+  border-color: var(--brand-primary) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 1px var(--brand-primary) !important;
+}
+
+
+/* CHECKBOX */
+
+.checkbox input:focus + .checkbox__checkmark {
+  border-color: var(--brand-primary) !important;
+  box-shadow: 0 0 0 1px var(--brand-primary) !important;
+}
+
+
+/* CHECKBOX checked */
+
+.checkbox input:checked + .checkbox__checkmark {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
 }
